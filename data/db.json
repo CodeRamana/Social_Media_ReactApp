@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "title": "My 2nd Post",
+      "dateTime": "2024-06-27 10:27:29",
+      "body": "Learning React"
+    },
+    {
+      "id": 3,
+      "title": "My First Post",
+      "dateTime": "2024-06-27 10:01:19",
+      "body": "Make a video about prepare for cracking FAANG company"
+    },
+    {
+      "id": 31,
+      "title": "My New Post",
+      "dateTime": "2024-06-27 10:28:30",
+      "body": "I Love My father"
+    },
+    {
+      "id": 32,
+      "title": "MY 2nd Post",
+      "dateTime": "2024-06-27 11:08:43",
+      "body": "I Want Become a Business man"
+    }
+  ]
+}

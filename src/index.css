@@ -1,13 +1,319 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App{
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin:0;
+  font-family:'Courier New', Courier, monospace;
+  font-style: italic;
 }
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  background-color:black;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: medium;
+}
+.icon{
+  font-size:25px;
+}
+
+section{
+  padding: 30px;
+  background-color: yellow;
+  border-radius: 5px;
+}
+
+form {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  margin-bottom: 1rem;
+  
+}
+
+label {
+  font-size: medium;
+  font-weight:bold; 
+  margin-right: 15px; 
+  color:black; 
+}
+
+input[type="search"] {
+  font-size: 1rem; 
+  padding: 0.5rem 1rem; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  outline: none; 
+}
+
+input[type="search"]:focus {
+  border-color: black; 
+}
+
+nav {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+nav li {
+  display: inline-block; 
+  margin-right: 30px; 
+  color: white;
+}
+
+nav a{
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color:black; /* Change link color on hover */
+  background-color: yellow;
+  padding: 5px 15px;
+}
+
+main{
+  background-color: black;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.Feed{
+  display: grid;
+  justify-content:center;
+  align-items: start;
+  grid-template-columns: repeat(2, auto); 
+}
+
+@media (max-width: 768px) {
+  .Feed {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+/* Layout for small screens (adjust breakpoint as needed) */
+@media (max-width: 928px) {
+  .Feed {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+a{
+  text-decoration: none;
+  color:Black
+}
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 1rem; 
+  width: 300px; 
+}
+
+.card-header {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.2rem; 
+  font-weight: bold;
+}
+
+.card-header p {
+  margin-top: 0.5rem; 
+  font-size: 0.8rem; 
+  color: #888;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body p {
+  margin: 0; 
+  font-size: 1rem; 
+}
+
+.newPost {
+  display: flex;
+  flex-direction: column;
+  width: 400px; 
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.newPost label {
+  color: white;
+  font-weight: bold; /* Make labels stand out */
+  margin-bottom: 0.5rem; /* Add some space below labels */
+}
+
+input[type="text"],
+textarea {
+  width: 100%; /* Make input and textarea fill the width */
+  padding: 0.7rem 1rem; /* Add padding for better readability */
+  border: 1px solid black; /* Create a subtle border */
+  border-radius: 4px; /* Match rounded corners of the form */
+  font-size: 1rem; /* Adjust font size for input elements */
+  outline: none; /* Remove default outline */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: black; /* Change border color on focus for better UX */
+}
+
+textarea {
+  resize: vertical; /* Allow users to resize the textarea vertically */
+}
+
+button[type="submit"] {
+  background-color:yellow; /* Green submit button */
+  color: black;
+  padding: 0.8rem 1.5rem; /* Adjust button padding */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Match rounded corners of the form */
+  cursor: pointer; /* Indicate clickable button */
+  margin-top: 1rem; /* Add some space above the button */
+  font-weight: bold; /* Make button text stand out */
+  font-size: medium;
+}
+
+button[type="submit"]:hover {
+  color: white;
+}
+
+.about {
+  max-width: 600px; /* Limit container width */
+  margin: 0 auto; /* Center the content vertically and horizontally */
+  padding: 2rem;
+  border-radius: 4px; /* Rounded corners */
+  background-color: #fff; /* White background for the content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-align: center; /* Center the title */
+}
+
+.about p {
+  line-height: 1.5;
+  text-align: justify; /* Justify text for better readability */
+}
+
+
+.missing {
+  background-color: #fff; /* White background for the content */
+  padding: 3rem;
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center the text content */
+}
+
+.missing h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f00; /* Red color for the "Whoops!" text */
+}
+
+.missing p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.missing a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  background-color: #4CAF50; /* Green background color for the link */
+  color: white;
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+}
+
+.missing a:hover {
+  background-color: #3e8e41; /* Darken green color on hover */
+}
+
+
+.post {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between; /* Align title and meta info */
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-header h2 {
+  /* Styles for the post title */
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.post-meta {
+  /* Styles for the post metadata (date/time) */
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.post-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: large;
+}
+
+.post-body button{
+  margin-left: 20px;
+  color: black;
+  background-color: yellow;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.editBtn{
+  margin-left: 20px;
+  color: black;
+  background-color: yellow;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: medium;
+}
+
